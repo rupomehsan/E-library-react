@@ -1,38 +1,215 @@
-.App {
+
+/* common */
+/* common */
+:root {
+  --first: #009A6B;
+  --second: #A0A0A0;
+  --third:#181C32;
+}
+.btn-success {
+  color: #fff;
+  background-color: var(--first);
+  border-color: var(--first);
+  width: 120px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: var(--first) !important;
+  border-color: var(--first) !important;
+  border-radius: 50px !important;
+  border: none;
+  padding: 0px 16px;
+}
+/* end common */
+/* end common */
+
+/* Login page */
+/* Login */
+#login::before {
+  content: '';
+  background: url('./image/login-bg.png')
+      no-repeat center center/cover;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+}
+.login {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.heading {
+  margin-top: 10%;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: var(--first) !important;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 3px solid var(--first);
+  width: 100%;
+  background:none !important;
+}
+button#pills-home-tab {
+  width: 100%;
+  color:var(--second)
+}
+button#pills-profile-tab {
+  width: 100%;
+  color:var(--second)
+}
+li.nav-item {
+  width: 50%;
+}
+.heading p{
+  color:var(--second);
+  font-size: 16px;
+  margin-top: 10px;
+}
+.nav-link {
+  display: block;
+  padding: 1rem 1rem !important;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div#pills-tabContent {
+  padding: 20px;
+  background: white;
+}
+ul#pills-tab {
+  border-bottom: 2px solid #80808030;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-pills .nav-link {
+  background: 0 0;
+  border: 0;
+  border-radius: 0 !important;
+}
+/* end Login */
+/* end Login */
+
+/* Dashboard page */
+/* top nav */
+.dashboard-navbar{
+  background:var(--third);
+  color:white;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background: radial-gradient(#181c32, #181c32);
+}
+.dashboard-navbar .navbar-light .navbar-nav .nav-link {
+  color: rgb(255 255 255);
+  width: 160px;
+  margin-left: 50px;
+}
+.dashboard-navbar a.nav-link.active {
+  background: var(--first);
+  border-radius: 30px;
+  color: rgb(255 255 255) !important;
+}
+.dashboard-navbar span.ml-3 {
+  background: white;
+  padding: 3px;
+  color: black;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.dashboard-navbar .nav-link {
+  padding: 10px 1rem !important;
+ 
+}
+.dashboard-navbar .img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-left: 20px;
+}
+.dashboard-navbar input.search {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  width: 100%;
+}
+.dashboard-navbar .search-container {
+  width: 35%;
+}
+.dashboard-navbar form {
+  width: 80%;
+  display: inline-block;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(255, 0, 0) !important;
+}
+
+#dashboard-nav li.nav-item {
+  width: 20% !important;
+}
+#dashboard-nav ul#pills-tab {
+  border-bottom: 2px solid #80808030;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+button#pills-Borrower-tab {
+  width: 100%;
+  color: var(--second);
+}
+button#pills-Book-tab {
+  width: 100%;
+  color: var(--second);
 }
 
-.App-link {
-  color: #61dafb;
+.row.single-card {
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 10px;
+}
+.row.single-card:hover {
+  background:var(--first);
+  color:white;
+  transition: 0.3s;
+}
+.row.single-card:hover .MuiSvgIcon-root {
+  background:white;
+  color:#181C32;
+  transition: 0.3s;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+  font-size: 50px !important;
+  border-radius: 50px;
+  padding: 10px;
+  background: rgba(12, 150, 84, 0.1);
+  color: var(--first);
 }
+.btn-primary .MuiSvgIcon-root{
+  color:rgb(255, 255, 255) !important;
+}
+.bottom-dashboard p{
+  color: var(--second)
+}
+.top-heading p span{
+  font-size: 26px;
+  color:var(--first);
+  font-weight: bold;
+}
+/* Dashboard page */
+/* top nav end */
