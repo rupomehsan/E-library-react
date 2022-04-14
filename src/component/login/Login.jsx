@@ -84,9 +84,11 @@ function Login () {
                     id='exampleFormControlInput1'
                     placeholder='Enter Your Password'
 													/>
+                    <form action='/dashboard'>
                     <button type='submit' class='btn btn-success my-3'>
-														Login
-													</button>
+															Login
+														</button>
+                  </form>
                   </div>
                   </div>
 
@@ -123,9 +125,11 @@ function Login () {
                     id='exampleFormControlInput1'
                     placeholder='Enter Your Password'
 													/>
+                    <form action='/dashboard'>
                     <button type='submit' class='btn btn-success my-3'>
-														Login
-													</button>
+															Login
+														</button>
+                  </form>
                   </div>
                   </div>
                   </div>
