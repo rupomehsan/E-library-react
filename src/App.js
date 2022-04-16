@@ -8,7 +8,7 @@ function App() {
   return (
     <>
        <Routes>
-              <Route path='/' element={<Login/>} />
+              <Route path='https://rupomehsan.github.io/E-library-react/' element={<Login/>} />
               <Route exact path="/login" element={<Login/>} />
               <Route exact path="/dashboard" element={<Dashboard/>} />
        </Routes>
