@@ -8,9 +8,9 @@ function App() {
   return (
     <>
        <Routes>
-              <Route path='https://rupomehsan.github.io/E-library-react/' element={<Login/>} />
-              <Route exact path="https://rupomehsan.github.io/E-library-react/login" element={<Login/>} />
-              <Route exact path="https://rupomehsan.github.io/E-library-react/dashboard" element={<Dashboard/>} />
+              <Route path='/' element={<Login/>} />
+              <Route exact path="/login" element={<Login/>} />
+              <Route exact path="/dashboard" element={<Dashboard/>} />
        </Routes>
       
     
